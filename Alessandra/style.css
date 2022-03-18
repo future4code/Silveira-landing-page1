@@ -13,42 +13,43 @@ header{
     background-color: rgb(248, 162, 50);
     color: rgba(245, 245, 245, 0.781);
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     height: 70px;
     font-size: 30px;
     box-shadow: 1px 1px 5px 5px grey;
 }
-h1{
-    width: 30px;
-    background-color: brown;
-}
 nav{
-    color: rgb(247, 113, 4);
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px 2px grey;
+    color: whitesmoke;
     font-size: 25px;
     display: flex;
     justify-content:end;
     align-items:center;
-
-        
+      
 }
 a{
+    
+    text-decoration: none;
+    color: rgb(245, 245, 245);
     margin:  0 10px;
+    
+}
+h1{
+    color: rgb(128, 128, 128);
+    padding: 50px;
+    font-size: 40px;
+    text-align: center;
 }
 img{
     box-shadow: 2px 2px 3px 2px rgb(247, 113, 4);
     margin: 20px 70px;
     width: 50%;
-    
+ 
 }
 .foto2{
     width: 28%;
     box-shadow: 2px 2px 3px 2px rgb(247, 113, 4);
-}
-h2{
-    color: rgb(128, 128, 128);
-    padding: 50px;
-    font-size: 40px;
-    text-align: center;
 }
 h3{
     color: rgb(128, 128, 128);
@@ -58,8 +59,15 @@ h3{
     padding-right: 16%;
 
 }
-p{
-
+p{  
+    background-color: rgb(253, 203, 128);
+    width: 20%;
 }
-
+h4{
+    color: rgb(128, 128, 128);
+    padding: 50px;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 16%;
+}
 
