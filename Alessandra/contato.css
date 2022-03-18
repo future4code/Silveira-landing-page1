@@ -1,0 +1,23 @@
+section{
+    display: grid;
+    background-color: rgb(253, 203, 128);
+}
+h4{
+    border-radius: 15px;
+    background-color: whitesmoke;
+    width: 10%;
+    margin-right: 0 0 50;
+    margin-left: 20%;
+    text-align: center;
+    font: 18px;
+    margin: 0px 0px 16px;
+    color: grey;
+    justify-content: center
+    
+}
+p{
+    text-align: center;
+    margin: 0px 0px 8px;
+    font-size: 18px;    
+    
+}
