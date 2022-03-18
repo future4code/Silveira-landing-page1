@@ -1,5 +1,9 @@
 
 /* Estilização para secção sobre nós */
+*{
+    margin: 0;
+    padding: 0;
+}
 #sobre-nos{
     align-items: stretch;
     text-align: center;
@@ -19,14 +23,18 @@
 .missao{
     min-width: 100vw;   
     background-color: rgb(226, 156, 43);
+    padding-bottom: 10px;
 }
 .missao p{
     padding-top: 10px;
+    padding-bottom: 5px;
 }
 .valores{
-    padding-top: 20px;
     min-width: 100vw;
-    background-color: rgba(17, 20, 206, 0.801);
+    background-color: rgba(230, 230, 240, 0.801);
 }.valores p{
     padding-top: 10px;
+}
+.valores strong{
+    color: rgb(200, 69, 8);
 }
