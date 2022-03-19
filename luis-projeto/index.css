@@ -11,39 +11,42 @@
     margin: 0;
     box-sizing: border-box;
     --cor-destaque: #F27D16;
-}
-
-body {
-    background-color: rgba(245, 245, 245, 0.925);
+    color: #515A73;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header{
-    background-color: rgb(248, 162, 50);
     color: rgba(245, 245, 245, 0.781);
+    background-color: rgb(248, 162, 50);
 }
 
 nav{
-    font-size: 25px;
     display: flex;
     justify-content: space-between;
     align-items:center;
-    height: 70px;
-    font-size: 30px;
-    box-shadow: 1px 1px 5px 5px grey;
+    height: 3vw;
+    margin: 0px 25px;
 }
 
-.abas {
-    border-radius: 8px;
-    box-shadow: 1px 1px 2px 2px grey;
-    color: whitesmoke;
+h1 {
+    color: white;
+    font-size: 2rem;
 }
 
-a{
-    
+.abas a {
     text-decoration: none;
     color: rgb(245, 245, 245);
     margin:  0 10px;
-    
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.abas a:hover {
+    border: 5px solid var(--cor-destaque);
+    border-radius: 2px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 
 /*
@@ -71,7 +74,9 @@ main {
 }
 
 .container-descricao p {
-    font-size: 25px;
+    padding-top: 30px;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .subtitulos {
@@ -84,13 +89,14 @@ main {
 
 h2 {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
 
 h3 {
     font-size: 3.2rem;
+    font-family: 'Times New Roman', Times, serif;
     color: var(--cor-destaque);
 }
 
@@ -99,13 +105,6 @@ h3 {
     width: 50%;
     border: 3px solid #F2CDA0;
     margin-top: 100px;
-}
-
-main p {
-    padding-top: 30px;
-    font-size: 1.2rem;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /*
@@ -183,17 +182,6 @@ h5 {
     color: var(--cor-destaque);
 }
 
-.sobre-nos-direita {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid grey;
-    border-left: 0;
-    border-right: 0;
-    background-color: #F2DAC4;
-}
-
 .sobre-nos-descricao {
     width: 100%;
     background-color: #F2DAC4;
@@ -243,8 +231,11 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(202, 200, 200);
-    /* margin-right: 50px; */
+    background-color: rgb(211, 210, 210);
+    border: 1px solid black;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
 }
 
 .produto-imagem img {
@@ -256,7 +247,11 @@ h5 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(202, 200, 200);
+    background-color: rgb(211, 210, 210);
+    border: 1px solid grey;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
 }
 
 .texto-produto {
@@ -281,43 +276,42 @@ h5 {
 */
 
 .contato-imagem {
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    background-color: white;
 }
 
 .contato-imagem img {
-    width: 100%;
-    /* border-radius: 50%; */
+    width: 75%;
 }
 
 .contato-descricao {
-    /* display: flex; */
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: #F2DAC4;
+    background-color: white;
     width: 50vw;
 }
 
 h6 {
-    border-radius: 15px;
-    background-color: whitesmoke;
-    width: 10%;
-    margin-right: 0 0 50;
-    margin-left: 20%;
+    font-size: 1.8em;
+    color: var(--cor-destaque);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+    font-weight: bolder;
     text-align: center;
-    font: 18px;
-    margin: 0px 0px 16px;
-    color: grey;
-    justify-content: center
-    
+    margin-top: 75px;
 }
 
-.contato1 p, .contato2 p{
-    text-align: center;
-    margin: 0px 0px 8px;
-    font-size: 18px;    
-    
+.texto-contatos p {
+    padding: 10px;
+}
+
+.texto-contatos p::first-line {
+    font-weight: bolder;
 }
 
 /*
@@ -329,49 +323,286 @@ h6 {
 */
 
 footer{
-    grid-column: 1 / 3 ;
     display: flex;    
     justify-content: space-around;
     align-items: center;
     background-color: rgb(248, 162, 50);
     color: rgba(0, 0, 0, 0.781);
-    font-size: 16px;
-    
+    font-size: 0.8em;
 }
+
 .redes-sociais{
+    display: flex;
+    justify-content: center;
     list-style: none; 
 }
+
 .redes-sociais li {
-    float: left;
-    padding: 0 2px;
     padding-left: 4px;
     padding-right: 4px;
 }
+
 .redes-sociais li:hover{
     background:rgb(59, 50, 29);
 }    
+
 #instagram{
     height: 40px;
     width: 40px;
 }
+
 #twitter{
     height: 40px;
     width: 40px;
 }
+
 #facebook{
     height: 40px;
     width: 40px;
 }
+
 #linkedin{
     height: 40px;
     width: 40px;
 }
+
 #logo-e-texto{
     display: flex;
     align-items: center;
 }
+
 #f4bank{
     width: 50px;
     padding-right: 3%;
-    
+    border-radius: 2px;
 }
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO
+* *
+*
+*/
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/*
+*
+* *
+* * * DESIGN RESPONSIVO - HEADER
+* *
+*
+*/
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: 18vw;
+        margin: 0px 5px;
+    }
+
+    .abas a {
+        text-decoration: none;
+        color: rgb(245, 245, 245);
+        margin: 0px 5px;
+        font-size: 1em;
+        font-weight: bolder;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO - HOME
+* *
+*
+*/
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-descricao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        margin-top: 10px;
+    }
+
+    .container-descricao p {
+        padding-top: 20px;
+        font-size: 1.1em;
+    }
+    
+    .subtitulos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+    }
+    
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+    
+    h3 {
+        font-size: 2.2rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--cor-destaque);
+        text-align: center;
+    }
+
+    .container-descricao img {
+        border-radius: 50%;
+        width: 60%;
+        border: 3px solid #F2CDA0;
+        margin-top: 10px;
+    }
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO -> FORMULÁRIO
+* *
+*
+*/
+
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO -> SOBRE NÓS
+* *
+*
+*/
+
+.sobre-nos-esquerda {
+    margin-top: 20px;
+    border-bottom: 0;
+    background-color: #F2DAC4;
+}
+
+.sobre-nos-esquerda img {
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+.sobre-nos-descricao {
+    border-top: 0;
+}
+
+.sobre-nos-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-nos-texto p {
+    width: 75%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO -> PRODUTO
+* *
+*
+*/
+
+.produto-imagem {
+    display: none;
+}
+
+.texto-produto {
+    text-align: center;
+}
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO -> CONTATO
+* *
+*
+*/
+
+.contato-imagem img {
+    width: 80%;
+}
+
+.contato-descricao {
+    width: 100%;
+}
+
+h6 {
+    font-size: 1.3em;
+    margin-top: 30px;
+}
+
+.texto-contatos p {
+    padding: 10px;
+    text-align: center;
+}
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO -> FOOTER
+* *
+*
+*/
+
+footer{
+    flex-direction: column;   
+    justify-content: center;
+    font-size: 0.7em;
+}
+
+
+.redes-sociais li {
+    padding: 0px 10px;
+}
+
+#logo-e-texto p {
+    text-align: center;
+    margin: 5px 0px;
+}
+
+#f4bank{
+    display: none;
+}
+
+}
+    
