@@ -1,0 +1,610 @@
+/*
+*
+* *
+* * * ESTILOS HEADER
+* *
+*
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --cor-destaque: #F27D16;
+    color: #515A73;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    color: rgba(245, 245, 245, 0.781);
+    background-color: rgb(248, 162, 50);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 3vw;
+    margin: 0px 25px;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.abas a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    margin:  0 10px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    transition-delay: 2s;
+}
+
+.abas a:hover {
+    border: 5px solid var(--cor-destaque);
+    border-radius: 2px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+/*
+*
+* *
+* * * ESTILOS MAIN -> LOGO E DESCRIÇÃO
+* *
+*
+*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    background-color: #F2F2F2;
+    color: #515A73;
+}
+
+.container-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-descricao p {
+    padding-top: 30px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.subtitulos {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+    left: 20%;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 3.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--cor-destaque);
+}
+
+.container-descricao img {
+    border-radius: 50%;
+    width: 50%;
+    border: 3px solid #F2CDA0;
+    margin-top: 100px;
+}
+
+/*
+*
+* *
+* * * ESTILOS MAIN -> FORMULÁRIO
+* *
+*
+*/
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+form {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 25px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    background-color: #e49a5a;
+    opacity: 85%;
+}
+
+form input {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: left;
+    color: black;
+}
+
+/*
+*
+* *
+* * * ESTILOS MAIN -> SOBRE NÓS
+* *
+*
+*/
+
+.sobre-nos-esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-left: 0;
+    border-right: 0;
+    background-color: #F2DAC4;
+}
+
+.sobre-nos-esquerda img {
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+h5 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--cor-destaque);
+}
+
+.sobre-nos-descricao {
+    width: 100%;
+    background-color: #F2DAC4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-left: 0;
+    border-right: 0;
+    background-color: #F2DAC4;
+}
+
+.sobre-nos-texto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-nos-texto p {
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-right: 50px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.sobre-nos-texto p::first-line {
+    font-size: 1.5em;
+    color: var(--cor-destaque);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+/*
+*
+* *
+* * * ESTILOS PRODUTO
+* *
+*
+*/
+
+.produto-imagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 210, 210);
+    border: 1px solid black;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.produto-imagem img {
+    width: 25%;
+}
+
+.produto-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(211, 210, 210);
+    border: 1px solid grey;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.texto-produto {
+    margin: 50px;
+}
+
+.texto-produto p::first-line {
+    font-size: 1.5em;
+    color: var(--cor-destaque);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+/*
+*
+* *
+* * * ESTILOS CONTATO
+* *
+*
+*/
+
+.contato-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.contato-imagem img {
+    width: 75%;
+}
+
+.contato-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 50vw;
+}
+
+h6 {
+    font-size: 1.8em;
+    color: var(--cor-destaque);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.texto-contatos p {
+    padding: 10px;
+}
+
+.texto-contatos p::first-line {
+    font-weight: bolder;
+}
+
+/*
+*
+* *
+* * * ESTILOS FOOTER -> REDES SOCIAIS
+* *
+*
+*/
+
+footer{
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(248, 162, 50);
+    color: rgba(0, 0, 0, 0.781);
+    font-size: 0.8em;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    list-style: none; 
+}
+
+.redes-sociais li {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.redes-sociais li:hover{
+    background:rgb(59, 50, 29);
+}    
+
+#instagram{
+    height: 40px;
+    width: 40px;
+}
+
+#twitter{
+    height: 40px;
+    width: 40px;
+}
+
+#facebook{
+    height: 40px;
+    width: 40px;
+}
+
+#linkedin{
+    height: 40px;
+    width: 40px;
+}
+
+#logo-e-texto{
+    display: flex;
+    align-items: center;
+}
+
+#f4bank{
+    width: 50px;
+    padding-right: 3%;
+    border-radius: 2px;
+}
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO
+* *
+*
+*/
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/*
+*
+* *
+* * * DESIGN RESPONSIVO - HEADER
+* *
+*
+*/
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: 18vw;
+        margin: 0px 5px;
+    }
+
+    .abas a {
+        text-decoration: none;
+        color: rgb(245, 245, 245);
+        margin: 0px 5px;
+        font-size: 1em;
+        font-weight: bolder;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO - HOME
+* *
+*
+*/
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-descricao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        margin-top: 10px;
+    }
+
+    .container-descricao p {
+        padding-top: 20px;
+        font-size: 1.1em;
+    }
+    
+    .subtitulos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+    }
+    
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+    
+    h3 {
+        font-size: 2.2rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--cor-destaque);
+        text-align: center;
+    }
+
+    .container-descricao img {
+        border-radius: 50%;
+        width: 60%;
+        border: 3px solid #F2CDA0;
+        margin-top: 10px;
+    }
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO -> FORMULÁRIO
+* *
+*
+*/
+
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO -> SOBRE NÓS
+* *
+*
+*/
+
+.sobre-nos-esquerda {
+    margin-top: 20px;
+    border-bottom: 0;
+    background-color: #F2DAC4;
+}
+
+.sobre-nos-esquerda img {
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+.sobre-nos-descricao {
+    border-top: 0;
+}
+
+.sobre-nos-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-nos-texto p {
+    width: 75%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO -> PRODUTO
+* *
+*
+*/
+
+.produto-imagem {
+    display: none;
+}
+
+.texto-produto {
+    text-align: center;
+}
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO -> CONTATO
+* *
+*
+*/
+
+.contato-imagem img {
+    width: 80%;
+}
+
+.contato-descricao {
+    width: 100%;
+}
+
+h6 {
+    font-size: 1.3em;
+    margin-top: 30px;
+}
+
+.texto-contatos p {
+    padding: 10px;
+    text-align: center;
+}
+
+/*
+*
+* *
+* * * DESIGN RESPONSIVO -> FOOTER
+* *
+*
+*/
+
+footer{
+    flex-direction: column;   
+    justify-content: center;
+    font-size: 0.7em;
+}
+
+
+.redes-sociais li {
+    padding: 0px 10px;
+}
+
+#logo-e-texto p {
+    text-align: center;
+    margin: 5px 0px;
+}
+
+#f4bank{
+    display: none;
+}
+
+}
+    
